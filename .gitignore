@@ -1,0 +1,5 @@
+.ash_history
+/django-env
+.vscode
+*__pycache__*
+db.sqlite3

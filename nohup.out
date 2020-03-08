@@ -1,0 +1,166 @@
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/threading.py", line 926, in _bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python3.7/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/utils/autoreload.py", line 53, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/core/management/commands/runserver.py", line 117, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/local/lib/python3.7/site-packages/django/core/management/base.py", line 395, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/usr/local/lib/python3.7/site-packages/django/core/management/base.py", line 382, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/core/checks/registry.py", line 72, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/usr/local/lib/python3.7/site-packages/django/core/checks/urls.py", line 40, in check_url_namespaces_unique
+    all_namespaces = _load_all_namespaces(resolver)
+  File "/usr/local/lib/python3.7/site-packages/django/core/checks/urls.py", line 57, in _load_all_namespaces
+    url_patterns = getattr(resolver, 'url_patterns', [])
+  File "/usr/local/lib/python3.7/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 588, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python3.7/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 581, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/local/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/django/app/urls.py", line 20, in <module>
+    path('polls/', include('polls.url')),
+  File "/usr/local/lib/python3.7/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/local/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 965, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'polls.url'
+
+Performing system checks...
+
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+[06/Mar/2020 04:56:26] "GET /polls/ HTTP/1.1" 200 41
+[06/Mar/2020 04:56:30] "GET /admin/ HTTP/1.1" 302 0
+[06/Mar/2020 04:56:30] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 1918
+[06/Mar/2020 04:56:30] "GET /static/admin/css/base.css HTTP/1.1" 304 0
+[06/Mar/2020 04:56:30] "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+[06/Mar/2020 04:56:30] "GET /static/admin/css/login.css HTTP/1.1" 304 0
+[06/Mar/2020 04:56:30] "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+[06/Mar/2020 04:56:30] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+[06/Mar/2020 04:56:30] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+[06/Mar/2020 04:56:34] "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+[06/Mar/2020 04:56:34] "GET /admin/ HTTP/1.1" 200 3048
+[06/Mar/2020 04:56:34] "GET /static/admin/css/dashboard.css HTTP/1.1" 200 412
+[06/Mar/2020 04:56:34] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+[06/Mar/2020 04:56:34] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+[06/Mar/2020 04:56:34] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+[06/Mar/2020 04:56:40] "GET /admin/auth/group/ HTTP/1.1" 200 3508
+[06/Mar/2020 04:56:40] "GET /static/admin/css/changelists.css HTTP/1.1" 200 6190
+[06/Mar/2020 04:56:40] "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 363
+[06/Mar/2020 04:56:40] "GET /static/admin/js/actions.js HTTP/1.1" 200 6766
+[06/Mar/2020 04:56:40] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Mar/2020 04:56:40] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 6918
+[06/Mar/2020 04:56:40] "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1530
+[06/Mar/2020 04:56:40] "GET /static/admin/js/urlify.js HTTP/1.1" 200 8941
+[06/Mar/2020 04:56:40] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 128820
+[06/Mar/2020 04:56:40] "GET /static/admin/img/search.svg HTTP/1.1" 200 458
+[06/Mar/2020 04:56:40] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 280364
+[06/Mar/2020 04:56:40] "GET /static/admin/js/core.js HTTP/1.1" 200 5723
+[06/Mar/2020 04:56:40] "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+[06/Mar/2020 04:56:43] "GET /admin/auth/ HTTP/1.1" 200 2974
+[06/Mar/2020 04:56:44] "GET /admin/auth/user/ HTTP/1.1" 200 6617
+[06/Mar/2020 04:56:45] "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+[06/Mar/2020 04:56:45] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Mar/2020 04:56:45] "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1097
+[06/Mar/2020 04:56:48] "GET /admin/auth/user/1/change/ HTTP/1.1" 200 14541
+[06/Mar/2020 04:56:48] "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 20232
+[06/Mar/2020 04:56:48] "GET /static/admin/js/SelectBox.js HTTP/1.1" 200 5753
+[06/Mar/2020 04:56:48] "GET /static/admin/js/calendar.js HTTP/1.1" 200 7777
+[06/Mar/2020 04:56:48] "GET /static/admin/js/change_form.js HTTP/1.1" 200 712
+[06/Mar/2020 04:56:48] "GET /static/admin/css/forms.css HTTP/1.1" 200 8518
+[06/Mar/2020 04:56:48] "GET /static/admin/js/SelectFilter2.js HTTP/1.1" 200 12318
+[06/Mar/2020 04:56:48] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[06/Mar/2020 04:56:48] "GET /static/admin/css/widgets.css HTTP/1.1" 200 10322
+[06/Mar/2020 04:56:48] "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 495
+[06/Mar/2020 04:56:49] "GET /static/admin/img/icon-clock.svg HTTP/1.1" 200 677
+[06/Mar/2020 04:56:49] "GET /static/admin/img/selector-icons.svg HTTP/1.1" 200 3291
+[06/Mar/2020 04:56:49] "GET /static/admin/img/icon-unknown.svg HTTP/1.1" 200 655
+[06/Mar/2020 04:56:49] "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 200 1086
+[06/Mar/2020 04:56:49] "GET /static/admin/img/icon-unknown-alt.svg HTTP/1.1" 200 655
+[06/Mar/2020 04:57:12] "POST /admin/auth/user/1/change/ HTTP/1.1" 302 0
+[06/Mar/2020 04:57:12] "GET /admin/auth/user/ HTTP/1.1" 200 6800
+[06/Mar/2020 04:57:12] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+Not Found: /
+[06/Mar/2020 04:57:21] "GET / HTTP/1.1" 404 2024
+[06/Mar/2020 04:57:23] "GET /admin/auth/user/ HTTP/1.1" 200 6620
+/home/django/polls/admin.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+March 06, 2020 - 04:56:22
+Django version 3.0.4, using settings 'app.settings'
+Starting development server at http://0:8000/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+[08/Mar/2020 12:01:47] "POST /admin/login/?next=/admin/ HTTP/1.1" 200 2081
+[08/Mar/2020 12:01:52] "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+[08/Mar/2020 12:01:52] "GET /admin/ HTTP/1.1" 200 3731
+[08/Mar/2020 12:01:56] "GET /admin/password_change/ HTTP/1.1" 200 2867
+[08/Mar/2020 12:01:56] "GET /static/admin/css/forms.css HTTP/1.1" 200 8518
+[08/Mar/2020 12:01:56] "GET /static/admin/css/widgets.css HTTP/1.1" 200 10322
+[08/Mar/2020 12:02:01] "GET /admin/ HTTP/1.1" 200 3731
+[08/Mar/2020 12:02:03] "GET /admin/auth/user/ HTTP/1.1" 200 7067
+[08/Mar/2020 12:02:03] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[08/Mar/2020 12:02:03] "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+[08/Mar/2020 12:02:03] "GET /static/admin/img/search.svg HTTP/1.1" 200 458
+[08/Mar/2020 12:02:03] "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1097
+[08/Mar/2020 12:02:05] "GET /admin/auth/user/2/change/ HTTP/1.1" 200 14566
+[08/Mar/2020 12:02:05] "GET /static/admin/js/calendar.js HTTP/1.1" 200 7777
+[08/Mar/2020 12:02:05] "GET /static/admin/js/SelectBox.js HTTP/1.1" 200 5753
+[08/Mar/2020 12:02:05] "GET /static/admin/js/SelectFilter2.js HTTP/1.1" 200 12318
+[08/Mar/2020 12:02:05] "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 20232
+[08/Mar/2020 12:02:05] "GET /static/admin/js/change_form.js HTTP/1.1" 200 712
+[08/Mar/2020 12:02:05] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[08/Mar/2020 12:02:05] "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 495
+[08/Mar/2020 12:02:05] "GET /static/admin/img/selector-icons.svg HTTP/1.1" 200 3291
+[08/Mar/2020 12:02:05] "GET /static/admin/img/icon-unknown.svg HTTP/1.1" 200 655
+[08/Mar/2020 12:02:05] "GET /static/admin/img/icon-unknown-alt.svg HTTP/1.1" 200 655
+[08/Mar/2020 12:02:05] "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 200 1086
+[08/Mar/2020 12:02:05] "GET /static/admin/img/icon-clock.svg HTTP/1.1" 200 677
+[08/Mar/2020 12:02:25] "POST /admin/auth/user/2/change/ HTTP/1.1" 302 0
+[08/Mar/2020 12:02:25] "GET /admin/auth/user/ HTTP/1.1" 200 7253
+[08/Mar/2020 12:02:25] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[08/Mar/2020 12:02:39] "GET /admin/logout/ HTTP/1.1" 200 1212
+[08/Mar/2020 12:02:40] "GET /admin/ HTTP/1.1" 302 0
+[08/Mar/2020 12:02:40] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 1918
+[08/Mar/2020 12:02:43] "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+[08/Mar/2020 12:02:43] "GET /admin/ HTTP/1.1" 200 4041
+[08/Mar/2020 12:02:52] "GET /admin/auth/user/ HTTP/1.1" 200 7068
+[08/Mar/2020 12:02:52] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[08/Mar/2020 12:02:58] "GET /admin/auth/user/2/change/ HTTP/1.1" 200 14597
+[08/Mar/2020 12:02:58] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[08/Mar/2020 12:02:59] "GET /admin/auth/user/2/delete/ HTTP/1.1" 200 3342
+[08/Mar/2020 12:02:59] "GET /static/admin/js/cancel.js HTTP/1.1" 200 409
+[08/Mar/2020 12:03:01] "POST /admin/auth/user/2/delete/ HTTP/1.1" 302 0
+[08/Mar/2020 12:03:01] "GET /admin/auth/user/ HTTP/1.1" 200 6763
+[08/Mar/2020 12:03:01] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[08/Mar/2020 12:03:04] "GET /admin/auth/user/ HTTP/1.1" 200 6620
+[08/Mar/2020 12:03:04] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[08/Mar/2020 12:03:05] "GET /admin/ HTTP/1.1" 200 4285
+[08/Mar/2020 12:03:05] "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 200 392
+[08/Mar/2020 12:03:08] "GET /polls/ HTTP/1.1" 200 231
+[08/Mar/2020 12:03:12] "GET /polls/2/ HTTP/1.1" 200 38
+[08/Mar/2020 12:03:14] "GET /polls/1/ HTTP/1.1" 200 36
+[08/Mar/2020 12:03:18] "GET /polls/ HTTP/1.1" 200 231
