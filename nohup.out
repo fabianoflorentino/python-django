@@ -164,3 +164,1530 @@ Watching for file changes with StatReloader
 [08/Mar/2020 12:03:12] "GET /polls/2/ HTTP/1.1" 200 38
 [08/Mar/2020 12:03:14] "GET /polls/1/ HTTP/1.1" 200 36
 [08/Mar/2020 12:03:18] "GET /polls/ HTTP/1.1" 200 231
+[08/Mar/2020 12:16:34] "GET /polls/ HTTP/1.1" 200 231
+/Users/florentino/Documents/GitHub/python-django/polls/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+March 08, 2020 - 12:01:25
+Django version 3.0.4, using settings 'app.settings'
+Starting development server at http://0:8000/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+/Users/florentino/Documents/GitHub/python-django/polls/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+March 08, 2020 - 12:27:21
+Django version 3.0.4, using settings 'app.settings'
+Starting development server at http://0:8000/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+/Users/florentino/Documents/GitHub/python-django/polls/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+March 08, 2020 - 12:27:55
+Django version 3.0.4, using settings 'app.settings'
+Starting development server at http://0:8000/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+/Users/florentino/Documents/GitHub/python-django/polls/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+March 08, 2020 - 12:28:32
+Django version 3.0.4, using settings 'app.settings'
+Starting development server at http://0:8000/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+/Users/florentino/Documents/GitHub/python-django/polls/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+March 08, 2020 - 12:30:28
+Django version 3.0.4, using settings 'app.settings'
+Starting development server at http://0:8000/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+/Users/florentino/Documents/GitHub/python-django/polls/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+March 08, 2020 - 12:30:48
+Django version 3.0.4, using settings 'app.settings'
+Starting development server at http://0:8000/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+/Users/florentino/Documents/GitHub/python-django/polls/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+March 08, 2020 - 12:32:44
+Django version 3.0.4, using settings 'app.settings'
+Starting development server at http://0:8000/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+/Users/florentino/Documents/GitHub/python-django/polls/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+March 08, 2020 - 12:35:36
+Django version 3.0.4, using settings 'app.settings'
+Starting development server at http://0:8000/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+[08/Mar/2020 12:42:58] "GET /polls/ HTTP/1.1" 200 231
+Internal Server Error: /polls/2/
+Traceback (most recent call last):
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/florentino/Documents/GitHub/python-django/polls/views.py", line 21, in detail
+    return render(request, 'polls/detail.html', {'question': question})
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/template/engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/template/engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/template/loaders/base.py", line 29, in get_template
+    return Template(
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/template/base.py", line 156, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/template/base.py", line 194, in compile_nodelist
+    return parser.parse()
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/template/base.py", line 477, in parse
+    raise self.error(token, e)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/template/base.py", line 475, in parse
+    compiled_result = compile_func(self, token)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/template/defaulttags.py", line 1359, in url
+    viewname = parser.compile_filter(bits[1])
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/template/base.py", line 562, in compile_filter
+    return FilterExpression(token, self)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/template/base.py", line 661, in __init__
+    raise TemplateSyntaxError("Could not parse the remainder: '%s' "
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: ':vote' from 'polls:vote'
+[08/Mar/2020 12:43:04] "GET /polls/2/ HTTP/1.1" 500 133549
+Internal Server Error: /polls/2/
+Traceback (most recent call last):
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/florentino/Documents/GitHub/python-django/polls/views.py", line 21, in detail
+    return render(request, 'polls/detail.html', {'question': question})
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/template/engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/template/engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/template/loaders/base.py", line 29, in get_template
+    return Template(
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/template/base.py", line 156, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/template/base.py", line 194, in compile_nodelist
+    return parser.parse()
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/template/base.py", line 477, in parse
+    raise self.error(token, e)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/template/base.py", line 475, in parse
+    compiled_result = compile_func(self, token)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/template/defaulttags.py", line 1359, in url
+    viewname = parser.compile_filter(bits[1])
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/template/base.py", line 562, in compile_filter
+    return FilterExpression(token, self)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/template/base.py", line 661, in __init__
+    raise TemplateSyntaxError("Could not parse the remainder: '%s' "
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: ':votes' from 'polls:votes'
+[08/Mar/2020 12:45:06] "GET /polls/2/ HTTP/1.1" 500 133705
+Internal Server Error: /polls/2/
+Traceback (most recent call last):
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/florentino/Documents/GitHub/python-django/polls/views.py", line 21, in detail
+    return render(request, 'polls/detail.html', {'question': question})
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/template/engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/template/engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/template/loaders/base.py", line 29, in get_template
+    return Template(
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/template/base.py", line 156, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/template/base.py", line 194, in compile_nodelist
+    return parser.parse()
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/template/base.py", line 477, in parse
+    raise self.error(token, e)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/template/base.py", line 475, in parse
+    compiled_result = compile_func(self, token)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/template/defaulttags.py", line 1359, in url
+    viewname = parser.compile_filter(bits[1])
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/template/base.py", line 562, in compile_filter
+    return FilterExpression(token, self)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/template/base.py", line 661, in __init__
+    raise TemplateSyntaxError("Could not parse the remainder: '%s' "
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: ':vote' from 'polls:vote'
+[08/Mar/2020 12:45:51] "GET /polls/2/ HTTP/1.1" 500 133549
+[08/Mar/2020 19:16:46] "GET /polls/2/ HTTP/1.1" 200 240
+[08/Mar/2020 19:16:51] "POST /polls/2/vote/ HTTP/1.1" 200 298
+[08/Mar/2020 19:16:56] "POST /polls/2/vote/ HTTP/1.1" 200 298
+[08/Mar/2020 19:16:57] "POST /polls/2/vote/ HTTP/1.1" 200 298
+[08/Mar/2020 19:17:01] "GET /polls/2/vote/ HTTP/1.1" 200 298
+[08/Mar/2020 19:17:05] "GET /polls/ HTTP/1.1" 200 231
+[08/Mar/2020 19:30:43] "GET /polls/ HTTP/1.1" 200 231
+[08/Mar/2020 20:17:18] "GET /polls/ HTTP/1.1" 200 231
+[08/Mar/2020 20:18:40] "GET /polls/1/ HTTP/1.1" 200 238
+[08/Mar/2020 20:18:42] "POST /polls/1/vote/ HTTP/1.1" 200 296
+[08/Mar/2020 20:18:47] "GET /polls/ HTTP/1.1" 200 231
+/Users/florentino/Documents/GitHub/python-django/polls/urls.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+March 08, 2020 - 12:38:49
+Django version 3.0.4, using settings 'app.settings'
+Starting development server at http://0:8000/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/utils/autoreload.py", line 53, in wrapper
+    fn(*args, **kwargs)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/management/commands/runserver.py", line 117, in inner_run
+    self.check(display_num_errors=True)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/management/base.py", line 392, in check
+    all_issues = self._run_checks(
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/management/base.py", line 382, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/checks/registry.py", line 72, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/checks/urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/checks/urls.py", line 23, in check_resolver
+    return check_method()
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/urls/resolvers.py", line 407, in check
+    for pattern in self.url_patterns:
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/urls/resolvers.py", line 588, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/urls/resolvers.py", line 581, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/Users/florentino/Documents/GitHub/python-django/app/urls.py", line 20, in <module>
+    path('polls/', include('polls.urls')),
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/Users/florentino/Documents/GitHub/python-django/polls/urls.py", line 7, in <module>
+    path('', views.IndexView.as_view(), name='index'),
+AttributeError: module 'polls.views' has no attribute 'IndexView'
+/Users/florentino/Documents/GitHub/python-django/polls/urls.py changed, reloading.
+Performing system checks...
+
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/utils/autoreload.py", line 53, in wrapper
+    fn(*args, **kwargs)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/management/commands/runserver.py", line 117, in inner_run
+    self.check(display_num_errors=True)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/management/base.py", line 392, in check
+    all_issues = self._run_checks(
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/management/base.py", line 382, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/checks/registry.py", line 72, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/checks/urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/checks/urls.py", line 23, in check_resolver
+    return check_method()
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/urls/resolvers.py", line 407, in check
+    for pattern in self.url_patterns:
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/urls/resolvers.py", line 588, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/urls/resolvers.py", line 581, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/Users/florentino/Documents/GitHub/python-django/app/urls.py", line 20, in <module>
+    path('polls/', include('polls.urls')),
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/Users/florentino/Documents/GitHub/python-django/polls/urls.py", line 7, in <module>
+    path('', views.IndexView.as_view(), name='index'),
+AttributeError: module 'polls.views' has no attribute 'IndexView'
+/Users/florentino/Documents/GitHub/python-django/polls/urls.py changed, reloading.
+Performing system checks...
+
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/utils/autoreload.py", line 53, in wrapper
+    fn(*args, **kwargs)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/management/commands/runserver.py", line 117, in inner_run
+    self.check(display_num_errors=True)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/management/base.py", line 392, in check
+    all_issues = self._run_checks(
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/management/base.py", line 382, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/checks/registry.py", line 72, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/checks/urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/checks/urls.py", line 23, in check_resolver
+    return check_method()
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/urls/resolvers.py", line 407, in check
+    for pattern in self.url_patterns:
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/urls/resolvers.py", line 588, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/urls/resolvers.py", line 581, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/Users/florentino/Documents/GitHub/python-django/app/urls.py", line 20, in <module>
+    path('polls/', include('polls.urls')),
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/Users/florentino/Documents/GitHub/python-django/polls/urls.py", line 7, in <module>
+    path('', views.IndexView.as_view(), name='index'),
+AttributeError: module 'polls.views' has no attribute 'IndexView'
+/Users/florentino/Documents/GitHub/python-django/polls/views.py changed, reloading.
+Performing system checks...
+
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/utils/autoreload.py", line 53, in wrapper
+    fn(*args, **kwargs)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/management/commands/runserver.py", line 117, in inner_run
+    self.check(display_num_errors=True)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/management/base.py", line 392, in check
+    all_issues = self._run_checks(
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/management/base.py", line 382, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/checks/registry.py", line 72, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/checks/urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/checks/urls.py", line 23, in check_resolver
+    return check_method()
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/urls/resolvers.py", line 407, in check
+    for pattern in self.url_patterns:
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/urls/resolvers.py", line 588, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/urls/resolvers.py", line 581, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/Users/florentino/Documents/GitHub/python-django/app/urls.py", line 20, in <module>
+    path('polls/', include('polls.urls')),
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/Users/florentino/Documents/GitHub/python-django/polls/urls.py", line 2, in <module>
+    from . import views
+  File "/Users/florentino/Documents/GitHub/python-django/polls/views.py", line 10, in <module>
+    class indexView(generic.ListView):
+NameError: name 'generic' is not defined
+/Users/florentino/Documents/GitHub/python-django/polls/views.py changed, reloading.
+Performing system checks...
+
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/utils/autoreload.py", line 53, in wrapper
+    fn(*args, **kwargs)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/management/commands/runserver.py", line 117, in inner_run
+    self.check(display_num_errors=True)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/management/base.py", line 392, in check
+    all_issues = self._run_checks(
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/management/base.py", line 382, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/checks/registry.py", line 72, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/checks/urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/checks/urls.py", line 23, in check_resolver
+    return check_method()
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/urls/resolvers.py", line 407, in check
+    for pattern in self.url_patterns:
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/urls/resolvers.py", line 588, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/urls/resolvers.py", line 581, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/Users/florentino/Documents/GitHub/python-django/app/urls.py", line 20, in <module>
+    path('polls/', include('polls.urls')),
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/Users/florentino/Documents/GitHub/python-django/polls/urls.py", line 2, in <module>
+    from . import views
+  File "/Users/florentino/Documents/GitHub/python-django/polls/views.py", line 10, in <module>
+    class indexView(generic.ListView):
+NameError: name 'generic' is not defined
+/Users/florentino/Documents/GitHub/python-django/polls/views.py changed, reloading.
+Performing system checks...
+
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/utils/autoreload.py", line 53, in wrapper
+    fn(*args, **kwargs)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/management/commands/runserver.py", line 117, in inner_run
+    self.check(display_num_errors=True)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/management/base.py", line 392, in check
+    all_issues = self._run_checks(
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/management/base.py", line 382, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/checks/registry.py", line 72, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/checks/urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/checks/urls.py", line 23, in check_resolver
+    return check_method()
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/urls/resolvers.py", line 407, in check
+    for pattern in self.url_patterns:
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/urls/resolvers.py", line 588, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/urls/resolvers.py", line 581, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/Users/florentino/Documents/GitHub/python-django/app/urls.py", line 20, in <module>
+    path('polls/', include('polls.urls')),
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/Users/florentino/Documents/GitHub/python-django/polls/urls.py", line 2, in <module>
+    from . import views
+  File "/Users/florentino/Documents/GitHub/python-django/polls/views.py", line 10, in <module>
+    class indexView(generic.ListView):
+NameError: name 'generic' is not defined
+/Users/florentino/Documents/GitHub/python-django/polls/views.py changed, reloading.
+Performing system checks...
+
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/utils/autoreload.py", line 53, in wrapper
+    fn(*args, **kwargs)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/management/commands/runserver.py", line 117, in inner_run
+    self.check(display_num_errors=True)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/management/base.py", line 392, in check
+    all_issues = self._run_checks(
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/management/base.py", line 382, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/checks/registry.py", line 72, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/checks/urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/checks/urls.py", line 23, in check_resolver
+    return check_method()
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/urls/resolvers.py", line 407, in check
+    for pattern in self.url_patterns:
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/urls/resolvers.py", line 588, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/urls/resolvers.py", line 581, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/Users/florentino/Documents/GitHub/python-django/app/urls.py", line 20, in <module>
+    path('polls/', include('polls.urls')),
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/Users/florentino/Documents/GitHub/python-django/polls/urls.py", line 2, in <module>
+    from . import views
+  File "/Users/florentino/Documents/GitHub/python-django/polls/views.py", line 10, in <module>
+    class indexView(generic.ListView):
+NameError: name 'generic' is not defined
+/Users/florentino/Documents/GitHub/python-django/polls/views.py changed, reloading.
+Performing system checks...
+
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/utils/autoreload.py", line 53, in wrapper
+    fn(*args, **kwargs)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/management/commands/runserver.py", line 117, in inner_run
+    self.check(display_num_errors=True)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/management/base.py", line 392, in check
+    all_issues = self._run_checks(
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/management/base.py", line 382, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/checks/registry.py", line 72, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/checks/urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/checks/urls.py", line 23, in check_resolver
+    return check_method()
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/urls/resolvers.py", line 407, in check
+    for pattern in self.url_patterns:
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/urls/resolvers.py", line 588, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/urls/resolvers.py", line 581, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/Users/florentino/Documents/GitHub/python-django/app/urls.py", line 20, in <module>
+    path('polls/', include('polls.urls')),
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/Users/florentino/Documents/GitHub/python-django/polls/urls.py", line 2, in <module>
+    from . import views
+  File "/Users/florentino/Documents/GitHub/python-django/polls/views.py", line 10, in <module>
+    class indexView(generic.ListView):
+NameError: name 'generic' is not defined
+/Users/florentino/Documents/GitHub/python-django/polls/views.py changed, reloading.
+Performing system checks...
+
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/utils/autoreload.py", line 53, in wrapper
+    fn(*args, **kwargs)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/management/commands/runserver.py", line 117, in inner_run
+    self.check(display_num_errors=True)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/management/base.py", line 392, in check
+    all_issues = self._run_checks(
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/management/base.py", line 382, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/checks/registry.py", line 72, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/checks/urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/checks/urls.py", line 23, in check_resolver
+    return check_method()
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/urls/resolvers.py", line 407, in check
+    for pattern in self.url_patterns:
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/urls/resolvers.py", line 588, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/urls/resolvers.py", line 581, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/Users/florentino/Documents/GitHub/python-django/app/urls.py", line 20, in <module>
+    path('polls/', include('polls.urls')),
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/Users/florentino/Documents/GitHub/python-django/polls/urls.py", line 2, in <module>
+    from . import views
+  File "/Users/florentino/Documents/GitHub/python-django/polls/views.py", line 10, in <module>
+    class indexView(generic.ListView):
+NameError: name 'generic' is not defined
+/Users/florentino/Documents/GitHub/python-django/polls/views.py changed, reloading.
+Performing system checks...
+
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/utils/autoreload.py", line 53, in wrapper
+    fn(*args, **kwargs)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/management/commands/runserver.py", line 117, in inner_run
+    self.check(display_num_errors=True)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/management/base.py", line 392, in check
+    all_issues = self._run_checks(
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/management/base.py", line 382, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/checks/registry.py", line 72, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/checks/urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/checks/urls.py", line 23, in check_resolver
+    return check_method()
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/urls/resolvers.py", line 407, in check
+    for pattern in self.url_patterns:
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/urls/resolvers.py", line 588, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/urls/resolvers.py", line 581, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/Users/florentino/Documents/GitHub/python-django/app/urls.py", line 20, in <module>
+    path('polls/', include('polls.urls')),
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/Users/florentino/Documents/GitHub/python-django/polls/urls.py", line 2, in <module>
+    from . import views
+  File "/Users/florentino/Documents/GitHub/python-django/polls/views.py", line 10, in <module>
+    class indexView(generic.ListView):
+NameError: name 'generic' is not defined
+/Users/florentino/Documents/GitHub/python-django/polls/views.py changed, reloading.
+Performing system checks...
+
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/utils/autoreload.py", line 53, in wrapper
+    fn(*args, **kwargs)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/management/commands/runserver.py", line 117, in inner_run
+    self.check(display_num_errors=True)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/management/base.py", line 392, in check
+    all_issues = self._run_checks(
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/management/base.py", line 382, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/checks/registry.py", line 72, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/checks/urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/checks/urls.py", line 23, in check_resolver
+    return check_method()
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/urls/resolvers.py", line 407, in check
+    for pattern in self.url_patterns:
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/urls/resolvers.py", line 588, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/urls/resolvers.py", line 581, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/Users/florentino/Documents/GitHub/python-django/app/urls.py", line 20, in <module>
+    path('polls/', include('polls.urls')),
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/Users/florentino/Documents/GitHub/python-django/polls/urls.py", line 2, in <module>
+    from . import views
+  File "/Users/florentino/Documents/GitHub/python-django/polls/views.py", line 10, in <module>
+    class indexView(generic.ListView):
+NameError: name 'generic' is not defined
+/Users/florentino/Documents/GitHub/python-django/polls/views.py changed, reloading.
+Performing system checks...
+
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/utils/autoreload.py", line 53, in wrapper
+    fn(*args, **kwargs)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/management/commands/runserver.py", line 117, in inner_run
+    self.check(display_num_errors=True)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/management/base.py", line 392, in check
+    all_issues = self._run_checks(
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/management/base.py", line 382, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/checks/registry.py", line 72, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/checks/urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/checks/urls.py", line 23, in check_resolver
+    return check_method()
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/urls/resolvers.py", line 407, in check
+    for pattern in self.url_patterns:
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/urls/resolvers.py", line 588, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/urls/resolvers.py", line 581, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/Users/florentino/Documents/GitHub/python-django/app/urls.py", line 20, in <module>
+    path('polls/', include('polls.urls')),
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/Users/florentino/Documents/GitHub/python-django/polls/urls.py", line 7, in <module>
+    path('', views.IndexView.as_view(), name='index'),
+AttributeError: module 'polls.views' has no attribute 'IndexView'
+/Users/florentino/Documents/GitHub/python-django/polls/views.py changed, reloading.
+Performing system checks...
+
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/utils/autoreload.py", line 53, in wrapper
+    fn(*args, **kwargs)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/management/commands/runserver.py", line 117, in inner_run
+    self.check(display_num_errors=True)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/management/base.py", line 392, in check
+    all_issues = self._run_checks(
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/management/base.py", line 382, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/checks/registry.py", line 72, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/checks/urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/checks/urls.py", line 23, in check_resolver
+    return check_method()
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/urls/resolvers.py", line 407, in check
+    for pattern in self.url_patterns:
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/urls/resolvers.py", line 588, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/urls/resolvers.py", line 581, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/Users/florentino/Documents/GitHub/python-django/app/urls.py", line 20, in <module>
+    path('polls/', include('polls.urls')),
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/Users/florentino/Documents/GitHub/python-django/polls/urls.py", line 7, in <module>
+    path('', views.IndexView.as_view(), name='index'),
+AttributeError: module 'polls.views' has no attribute 'IndexView'
+/Users/florentino/Documents/GitHub/python-django/polls/views.py changed, reloading.
+Performing system checks...
+
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/utils/autoreload.py", line 53, in wrapper
+    fn(*args, **kwargs)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/management/commands/runserver.py", line 117, in inner_run
+    self.check(display_num_errors=True)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/management/base.py", line 392, in check
+    all_issues = self._run_checks(
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/management/base.py", line 382, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/checks/registry.py", line 72, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/checks/urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/checks/urls.py", line 23, in check_resolver
+    return check_method()
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/urls/resolvers.py", line 407, in check
+    for pattern in self.url_patterns:
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/urls/resolvers.py", line 588, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/urls/resolvers.py", line 581, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/Users/florentino/Documents/GitHub/python-django/app/urls.py", line 20, in <module>
+    path('polls/', include('polls.urls')),
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/Users/florentino/Documents/GitHub/python-django/polls/urls.py", line 7, in <module>
+    path('', views.IndexView.as_view(), name='index'),
+AttributeError: module 'polls.views' has no attribute 'IndexView'
+/Users/florentino/Documents/GitHub/python-django/polls/urls.py changed, reloading.
+Performing system checks...
+
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/utils/autoreload.py", line 53, in wrapper
+    fn(*args, **kwargs)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/management/commands/runserver.py", line 117, in inner_run
+    self.check(display_num_errors=True)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/management/base.py", line 392, in check
+    all_issues = self._run_checks(
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/management/base.py", line 382, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/checks/registry.py", line 72, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/checks/urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/checks/urls.py", line 23, in check_resolver
+    return check_method()
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/urls/resolvers.py", line 407, in check
+    for pattern in self.url_patterns:
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/urls/resolvers.py", line 588, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/urls/resolvers.py", line 581, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/Users/florentino/Documents/GitHub/python-django/app/urls.py", line 20, in <module>
+    path('polls/', include('polls.urls')),
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/Users/florentino/Documents/GitHub/python-django/polls/urls.py", line 7, in <module>
+    path('', views.IndexView.as_view(), name='index'),
+AttributeError: module 'polls.views' has no attribute 'IndexView'
+/Users/florentino/Documents/GitHub/python-django/polls/urls.py changed, reloading.
+Performing system checks...
+
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/utils/autoreload.py", line 53, in wrapper
+    fn(*args, **kwargs)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/management/commands/runserver.py", line 117, in inner_run
+    self.check(display_num_errors=True)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/management/base.py", line 392, in check
+    all_issues = self._run_checks(
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/management/base.py", line 382, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/checks/registry.py", line 72, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/checks/urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/checks/urls.py", line 23, in check_resolver
+    return check_method()
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/urls/resolvers.py", line 407, in check
+    for pattern in self.url_patterns:
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/urls/resolvers.py", line 588, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/urls/resolvers.py", line 581, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/Users/florentino/Documents/GitHub/python-django/app/urls.py", line 20, in <module>
+    path('polls/', include('polls.urls')),
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/Users/florentino/Documents/GitHub/python-django/polls/urls.py", line 7, in <module>
+    path('', views.IndexView.as_view(), name='index'),
+AttributeError: module 'polls.views' has no attribute 'IndexView'
+/Users/florentino/Documents/GitHub/python-django/polls/views.py changed, reloading.
+Performing system checks...
+
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/utils/autoreload.py", line 53, in wrapper
+    fn(*args, **kwargs)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/management/commands/runserver.py", line 117, in inner_run
+    self.check(display_num_errors=True)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/management/base.py", line 392, in check
+    all_issues = self._run_checks(
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/management/base.py", line 382, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/checks/registry.py", line 72, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/checks/urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/checks/urls.py", line 23, in check_resolver
+    return check_method()
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/urls/resolvers.py", line 407, in check
+    for pattern in self.url_patterns:
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/urls/resolvers.py", line 588, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/urls/resolvers.py", line 581, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/Users/florentino/Documents/GitHub/python-django/app/urls.py", line 20, in <module>
+    path('polls/', include('polls.urls')),
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/Users/florentino/Documents/GitHub/python-django/polls/urls.py", line 2, in <module>
+    from . import views
+  File "/Users/florentino/Documents/GitHub/python-django/polls/views.py", line 10, in <module>
+    class indexView(generic.indexView):
+AttributeError: module 'django.views.generic' has no attribute 'indexView'
+/Users/florentino/Documents/GitHub/python-django/polls/views.py changed, reloading.
+Performing system checks...
+
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/utils/autoreload.py", line 53, in wrapper
+    fn(*args, **kwargs)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/management/commands/runserver.py", line 117, in inner_run
+    self.check(display_num_errors=True)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/management/base.py", line 392, in check
+    all_issues = self._run_checks(
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/management/base.py", line 382, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/checks/registry.py", line 72, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/checks/urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/checks/urls.py", line 23, in check_resolver
+    return check_method()
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/urls/resolvers.py", line 407, in check
+    for pattern in self.url_patterns:
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/urls/resolvers.py", line 588, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/urls/resolvers.py", line 581, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/Users/florentino/Documents/GitHub/python-django/app/urls.py", line 20, in <module>
+    path('polls/', include('polls.urls')),
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/Users/florentino/Documents/GitHub/python-django/polls/urls.py", line 7, in <module>
+    path('', views.IndexView.as_view(), name='index'),
+AttributeError: module 'polls.views' has no attribute 'IndexView'
+/Users/florentino/Documents/GitHub/python-django/polls/views.py changed, reloading.
+Performing system checks...
+
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/utils/autoreload.py", line 53, in wrapper
+    fn(*args, **kwargs)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/management/commands/runserver.py", line 117, in inner_run
+    self.check(display_num_errors=True)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/management/base.py", line 392, in check
+    all_issues = self._run_checks(
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/management/base.py", line 382, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/checks/registry.py", line 72, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/checks/urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/checks/urls.py", line 23, in check_resolver
+    return check_method()
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/urls/resolvers.py", line 407, in check
+    for pattern in self.url_patterns:
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/urls/resolvers.py", line 588, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/urls/resolvers.py", line 581, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/Users/florentino/Documents/GitHub/python-django/app/urls.py", line 20, in <module>
+    path('polls/', include('polls.urls')),
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/Users/florentino/Documents/GitHub/python-django/polls/urls.py", line 7, in <module>
+    path('', views.IndexView.as_view(), name='index'),
+AttributeError: module 'polls.views' has no attribute 'IndexView'
+/Users/florentino/Documents/GitHub/python-django/polls/views.py changed, reloading.
+Performing system checks...
+
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/utils/autoreload.py", line 53, in wrapper
+    fn(*args, **kwargs)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/management/commands/runserver.py", line 117, in inner_run
+    self.check(display_num_errors=True)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/management/base.py", line 392, in check
+    all_issues = self._run_checks(
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/management/base.py", line 382, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/checks/registry.py", line 72, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/checks/urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/checks/urls.py", line 23, in check_resolver
+    return check_method()
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/urls/resolvers.py", line 407, in check
+    for pattern in self.url_patterns:
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/urls/resolvers.py", line 588, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/urls/resolvers.py", line 581, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/Users/florentino/Documents/GitHub/python-django/app/urls.py", line 20, in <module>
+    path('polls/', include('polls.urls')),
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/Users/florentino/Documents/GitHub/python-django/polls/urls.py", line 7, in <module>
+    path('', views.IndexView.as_view(), name='index'),
+AttributeError: module 'polls.views' has no attribute 'IndexView'
+/Users/florentino/Documents/GitHub/python-django/polls/urls.py changed, reloading.
+Performing system checks...
+
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/utils/autoreload.py", line 53, in wrapper
+    fn(*args, **kwargs)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/management/commands/runserver.py", line 117, in inner_run
+    self.check(display_num_errors=True)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/management/base.py", line 392, in check
+    all_issues = self._run_checks(
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/management/base.py", line 382, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/checks/registry.py", line 72, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/checks/urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/checks/urls.py", line 23, in check_resolver
+    return check_method()
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/urls/resolvers.py", line 407, in check
+    for pattern in self.url_patterns:
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/urls/resolvers.py", line 588, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/urls/resolvers.py", line 581, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/Users/florentino/Documents/GitHub/python-django/app/urls.py", line 20, in <module>
+    path('polls/', include('polls.urls')),
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/Users/florentino/Documents/GitHub/python-django/polls/urls.py", line 7, in <module>
+    path('', views.IndexView.as_view(), name='index'),
+AttributeError: module 'polls.views' has no attribute 'IndexView'
+/Users/florentino/Documents/GitHub/python-django/polls/views.py changed, reloading.
+Performing system checks...
+
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/utils/autoreload.py", line 53, in wrapper
+    fn(*args, **kwargs)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/management/commands/runserver.py", line 117, in inner_run
+    self.check(display_num_errors=True)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/management/base.py", line 392, in check
+    all_issues = self._run_checks(
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/management/base.py", line 382, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/checks/registry.py", line 72, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/checks/urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/core/checks/urls.py", line 23, in check_resolver
+    return check_method()
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/urls/resolvers.py", line 407, in check
+    for pattern in self.url_patterns:
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/urls/resolvers.py", line 588, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/urls/resolvers.py", line 581, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/Users/florentino/Documents/GitHub/python-django/app/urls.py", line 20, in <module>
+    path('polls/', include('polls.urls')),
+  File "/Users/florentino/Documents/GitHub/python-django/django-env/lib/python3.8/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/Users/florentino/Documents/GitHub/python-django/polls/urls.py", line 12, in <module>
+    path('<int:pk>/results/', views.ResultsView.as_view(), name='results'),
+AttributeError: module 'polls.views' has no attribute 'ResultsView'
+/Users/florentino/Documents/GitHub/python-django/polls/views.py changed, reloading.
+Performing system checks...
+
+Watching for file changes with StatReloader
+/Users/florentino/Documents/GitHub/python-django/polls/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+March 08, 2020 - 21:02:42
+Django version 3.0.4, using settings 'app.settings'
+Starting development server at http://0:8000/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+[08/Mar/2020 21:02:54] "GET /polls/ HTTP/1.1" 200 231
+[08/Mar/2020 21:02:55] "GET /polls/2/ HTTP/1.1" 200 240
+[08/Mar/2020 21:02:56] "POST /polls/2/vote/ HTTP/1.1" 200 298
+[08/Mar/2020 21:02:58] "POST /polls/2/vote/ HTTP/1.1" 200 298
+[08/Mar/2020 21:03:03] "GET /polls/ HTTP/1.1" 200 231
+/Users/florentino/Documents/GitHub/python-django/polls/urls.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+March 08, 2020 - 21:02:52
+Django version 3.0.4, using settings 'app.settings'
+Starting development server at http://0:8000/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+/Users/florentino/Documents/GitHub/python-django/polls/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+March 08, 2020 - 21:06:35
+Django version 3.0.4, using settings 'app.settings'
+Starting development server at http://0:8000/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+/Users/florentino/Documents/GitHub/python-django/polls/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+March 08, 2020 - 21:06:45
+Django version 3.0.4, using settings 'app.settings'
+Starting development server at http://0:8000/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
